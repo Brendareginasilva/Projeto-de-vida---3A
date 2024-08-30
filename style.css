@@ -1,72 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Chakra+Petch:wght@400;700&display=swap");
+root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
 
-:root {
-  --cor-de-fundo: #161618;
-  --verde: #9757ff;
-  --branco: #FFFFFF;
-  --botao-ativo: #e2eff1;
-  --botao-inativo: rgba(108, 102, 177, 0.5);
-  --texto-fundo: rgba(60, 123, 218, 0.3);
 }
 
 body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
-  font-family: 'Chakra Petch', sans-serif;
-}
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-.titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
-.titulo-principal span {
-    color: var(--verde);
-}
-.botao{
-    font-family: "Crakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     display: flex;
     justify-content: center;
-    padding: 1em;
-    font-size: 18px;
     align-items: center;
-    width:100%;
-    
-}
-.botao {
-    font-family: "Crakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
-.botoes {
-    display: block;
+    min-height: 100vh;
 }
 
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
 }
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
